@@ -71,5 +71,5 @@ window._langData = {
   "landing.footer.contact": "Контакты",
   "landing.footer.privacy": "Конфиденциальность",
   "landing.footer.terms": "Условия использования",
-  "landing.footer.developed_by": "FamTask v1.4.0 · Сделано с ❤️ для семей · © 2024-2026 albertocosta.info"
+  "landing.footer.developed_by": "FamTask v1.5.0 · Сделано с ❤️ для семей · © 2024-2026 albertocosta.info"
 };
