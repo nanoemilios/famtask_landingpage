@@ -5,6 +5,8 @@ Eigenständige Ablage der öffentlichen FamTask-Landingpage aus dem Hauptreposit
 ## Inhalt
 
 - `index.html` – Landingpage mit responsivem Layout und integrierter Seitenlogik
+- `icons/` – Favicon-/App-Icon-Set (identisch zur App, erzeugt mit
+  `../famtask/tools/build_icons.py --favicon-only`)
 - `i18n.js` und `lang/` – eigenständige Übersetzungslogik und Sprachdateien mit ausschließlich Landingpage-Texten
 - `install-config.js` – Zielkonfiguration für den Link zur FamTask-App
 
