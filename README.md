@@ -7,6 +7,9 @@ Eigenständige Ablage der öffentlichen FamTask-Landingpage aus dem Hauptreposit
 - `index.html` – Landingpage mit responsivem Layout und integrierter Seitenlogik
 - `icons/` – Favicon-/App-Icon-Set (identisch zur App, erzeugt mit
   `../famtask/tools/build_icons.py --favicon-only`)
+- `icons/og-image.png` – 1200×630-Vorschaubild für Open Graph und Twitter Cards
+- `vendor/fonts/` – selbst gehostete Schriften (Fredoka One, Nunito) mit
+  `fonts.css` und Lizenzhinweis; keine Anfragen an Google Fonts zur Laufzeit
 - `i18n.js` und `lang/` – eigenständige Übersetzungslogik und Sprachdateien mit ausschließlich Landingpage-Texten
 - `install-config.js` – Zielkonfiguration für den Link zur FamTask-App
 
@@ -15,6 +18,10 @@ Eigenständige Ablage der öffentlichen FamTask-Landingpage aus dem Hauptreposit
 Die Seite ist statisches HTML und kann auf einem Webserver oder über GitHub Pages bereitgestellt werden. Sie benötigt keine Dateien aus dem FamTask-App-Ordner. Für die App- und Rechtstext-Links muss die FamTask-Installation unter dem in `install-config.js` festgelegten Pfad verfügbar sein. Die Standardkonfiguration erwartet die Installation unter `/my`; für eine App auf einer Subdomain kann `type` auf `subdomain` gesetzt werden.
 
 Die Kontaktadresse wird auf Basis des Hostnamens als `info@<hostname>` gebildet.
+
+`og:image` ist relativ angegeben, damit die Seite ohne Anpassung auf jeder Domain
+läuft. Sobald die endgültige Adresse feststeht, in `index.html` auf die absolute
+URL setzen – einige Crawler (u. a. Facebook) verlangen das für Vorschauen.
 
 ## Bezug zur App
 
